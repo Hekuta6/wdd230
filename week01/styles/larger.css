@@ -1,5 +1,8 @@
 @media screen and (min-width: 820px) {
-    nav {
+
+    nav,
+    body,
+    main {
         justify-content: right;
         align-items: center;
         flex-direction: row-reverse;

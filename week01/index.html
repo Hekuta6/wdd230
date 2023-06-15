@@ -4,31 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hector Rodriguez - WDD 230 - Web Frontend Development</title>
-    <meta name="Description" content="WDD 230 - Web Frontend Development">
-    <meta name-="Description" content="course assigment portal">
-    <meta author="name" content="Hector Rodriguez">
+    <title>WDD 230 - Web Fronted Development Portal</title>
+    <meta name="description" content="Hector Rodriguez - WDD 230 - Web Fronted Development">
+    <meta name="author" content="Hector Rodriguez">
+    <meta name="title" content="Hector Rodriguez - WDD 230 - Web Fronted Development">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1></h1>
-        <h2>WDD 230 Web Frontend Development</h2>
-        <section>
+    <header class="header">
+        <img class="profile picture" src="images/me.png" alt="Me" width="100px">
+        <h1>Hector Rodriguez</h1>
+        <ul>
+            <nav>Home</nav>
+            <nav>Chamber</nav>
+            <nv>Site Plan</nv>
+        </ul>
+    </header>
+    <main class="main">
+        <h2>WDD 230: Web Fronted Development</h2>
+        <section class="card">
             <h3>Learning Activities</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <a></a>
         </section>
-        <section>
+        <section class="card">
             <h3>Information</h3>
         </section>
-    </header>
-    <nav>
-        <link rel="Home" href="">
-        <link rel="Chamber" href="">
-        <link rel="Site Plan" href="">
-        <link rel="Form" href="">
-    </nav>
-    <main> </main>
-    <footer>&copy;2023 Hector Rodriguez Mexico</footer>
+    </main class="footer">
+    <footer>
+        <p>&copy; Hector Rodriguez | Mexico</p>
+        <p class="last-update" id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto']
+            }
+        });
+    </script>
 </body>
 
 </html>
