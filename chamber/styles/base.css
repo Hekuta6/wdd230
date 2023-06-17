@@ -1,0 +1,478 @@
+:root {
+    --main-color: #240080;
+    --secondary-color: #000000;
+    --accent-color: #000000;
+    --default-light: #ffffff;
+    --default-dark: #faf4f4;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background-color: var(--secondary-color);
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+footer {
+    font-family: var(--header-font);
+    color: var(--default-light);
+}
+
+h1 {
+    font-size: 1.9em;
+    text-shadow: 2px 2px var(--default-dark);
+}
+
+h2 {
+    font-family: var(--header-font);
+    color: var(--main-color);
+    text-shadow: 3px 3px var(--default-dark);
+}
+
+h3 {
+    font-family: var(--header-font);
+    color: var(--default-light);
+    text-shadow: 2px 2px var(--default-dark);
+}
+
+p,
+a {
+    font-family: var(--paragraph-font);
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 80% auto;
+}
+
+body>* {
+    grid-column: 2;
+}
+
+.logo {
+    width: 50%;
+}
+
+/* ----- meet & greet ----- */
+
+#meetAndGreet {
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    color: var(--default-dark);
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+}
+
+#meetAndGreet span {
+    color: var(--main-color);
+    background-color: var(--default-dark);
+    display: block;
+    padding: 1% 0;
+}
+
+.activeBanner {
+    display: block;
+}
+
+.noDisplay {
+    display: none;
+}
+
+/* ----- social media icons ----- */
+
+.social {
+    display: flex;
+}
+
+.social a {
+    margin-right: 30%;
+    width: 30%;
+}
+
+.social img {
+    width: 25px;
+    margin-left: -400%;
+    margin-top: 430%;
+}
+
+/* ----- header ----- */
+
+header {
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    padding: .5rem;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+#company {
+    font-size: small;
+}
+
+header a {
+    color: rgb(0, 0, 0);
+}
+
+header .company {
+    text-align: center;
+    font-size: 60%;
+    padding: 10%;
+}
+
+header .company h1 {
+    margin-bottom: -5px;
+}
+
+/* ----- nav ----- */
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navButton {
+    background-color: var(--default-dark);
+    color: var(--main-color);
+    font-size: .9rem;
+    margin-top: -2%;
+}
+
+nav {
+    margin-top: 88px;
+    margin-left: -19px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: .2rem 2vw;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: var(--main-color);
+    background-color: var(--default-dark);
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+    background-color: var(--default-light);
+    color: var(--main-color);
+}
+
+/* --- nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+} --- */
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+    grid-column: 1/4;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 2%;
+}
+
+#navButton span:nth-child(1) {
+    display: block;
+}
+
+#navButton span:nth-child(2) {
+    display: none;
+}
+
+#navButton.open span:nth-child(1) {
+    display: none;
+}
+
+#navButton.open span:nth-child(2) {
+    display: block;
+}
+
+/* --- current date in header --- */
+
+#currentDate {
+    grid-column: 1/4;
+    text-align: center;
+    background-color: var(--default-dark);
+    color: var(--main-color);
+    padding: 1% 0 1% 0;
+    font-size: 19px;
+}
+
+/* ----- main ----- */
+
+main {
+    background-color: var(--default-light);
+}
+
+main section,
+main div {
+    margin: .5rem;
+}
+
+main section p,
+main div p {
+    color: var(--main-color);
+    padding: 5%;
+}
+
+/* ----- main / heroes ----- */
+
+#hero {
+    position: relative;
+    padding: 0;
+}
+
+#hero h2 {
+    position: absolute;
+    margin-left: 3%;
+    font-size: 1.5rem;
+}
+
+#hero a {
+    position: absolute;
+    background-color: var(--default-dark);
+    color: var(--main-color);
+    text-decoration: none;
+    margin-left: 64%;
+    margin-top: 50%;
+    box-shadow: 3px 3px 3px var(--main-color);
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 30%;
+    padding: 1%;
+    box-shadow: 3px 3px 3px var(--main-color);
+    border: 5px solid var(--secondary-color);
+}
+
+.event {
+    padding: 1%;
+    box-shadow: 3px 3px 3px var(--main-color);
+    border: 5px solid var(--secondary-color);
+    text-align: center;
+}
+
+.weather {
+    text-align: center;
+    padding: 1%;
+    box-shadow: 3px 3px 3px var(--main-color);
+    border: 5px solid var(--secondary-color);
+}
+
+.weather-img {
+    width: 20%;
+}
+
+.news {
+    padding: 1%;
+    box-shadow: 3px 3px 3px var(--main-color);
+    border: 5px solid var(--secondary-color);
+    text-align: center;
+}
+
+.join-us {
+    padding: 1%;
+    box-shadow: 3px 3px 3px var(--main-color);
+    border: 5px solid var(--secondary-color);
+    text-align: center;
+}
+
+.join-us {
+    display: none;
+}
+
+.spotlight {
+    padding: 4%;
+    box-shadow: 3px 3px 3px var(--main-color);
+    border: 5px solid var(--secondary-color);
+}
+
+.spotlight1 {
+    text-align: center;
+    padding: .5%;
+    box-shadow: 2px 1px 1px var(--main-color);
+    border: 5px solid var(--secondary-color);
+}
+
+.transport-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.spotlight2 {
+    text-align: center;
+    padding: .5%;
+    box-shadow: 2px 1px 1px var(--main-color);
+    border: 5px solid var(--secondary-color);
+}
+
+.code-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.spotlight3 {
+    text-align: center;
+    padding: .5%;
+    box-shadow: 2px 1px 1px var(--main-color);
+    border: 5px solid var(--secondary-color);
+}
+
+.treehouse-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.spotlight3 {
+    display: none;
+}
+
+/* ----- join.html ---- */
+
+.join {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+form {
+    grid-row: 2;
+    max-width: 100%;
+    background-color: var(--accent-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+
+form fieldset {
+    display: block;
+    margin: 1rem 0;
+    border-radius: 5px;
+    padding: .5rem 2%;
+}
+
+form label.up {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+form label.up input {
+    display: block;
+    border: 1px solid gray;
+    border-radius: 5px;
+    max-width: 25rem;
+}
+
+form label.down input {
+    display: block;
+    width: auto;
+    height: 100%;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+form label.up input:required {
+    border-bottom: 3px solid red;
+}
+
+form label.up input:required:valid {
+    border-bottom: 3px solid green;
+}
+
+label.radio {
+    display: block;
+    padding: .75rem;
+}
+
+div.memberships {
+    grid-row: 1;
+    font-size: .9rem;
+    background-color: var(--accent-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+
+div.memberships li {
+    list-style: none;
+    margin-top: -.5;
+}
+
+div.memberships h2,
+h3 {
+    background-color: var(--default-dark);
+    color: var(--main-color);
+}
+
+form legend {
+    background-color: var(--main-color);
+    color: var(--default-dark);
+    margin: 0 1rem;
+}
+
+form input {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* ----- footer ----- */
+
+footer {
+    display: block;
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px var(--default-dark);
+    color: var(--default-light);
+    font-family: var(--header-font);
+    /*position: relative;*/
+    padding: 1rem;
+    /*z-index: 10;*/
+    align-items: center;
+    text-align: center;
+}
+
+.section-1 {
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+.logo-footer {
+    width: 80%;
+}
+
+footer a {
+    color: var(--default-light);
+    text-decoration: underline var(--secondary-color);
+}
+
+footer a:hover {
+    text-shadow: 1px 1px 10px var(--secondary-color);
+}
