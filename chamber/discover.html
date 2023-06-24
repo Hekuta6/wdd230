@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Cats Chamber</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development">
+    <meta name="author" content="Hector Rodriguez">
+    <link rel="icon" href="images/cat-paw.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/discover.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <button id="hamburgerButton">&#8801;</button>
+        <h1 class="h1-name">Photo Cats Chambe</h1>
+    </header>
+    <nav id="mainMenu">
+
+        <ul>
+            <h2>Photo Cats <br>Chamber</h2>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <div class="header-content">
+        <img src="images/cat.jpg" alt="Profile Image">
+        <div class="cta-btn">Join Us Today</div>
+    </div>
+    <main class="main-3">
+        <div class="grid-container">
+            <div class="sidebar sidebar-left">
+                <div class="field">
+                    <h3>News</h3>
+                    <p>Have you seen this?:</p>
+                    <br>
+                    <ul>
+                        <li>Visit our new restaurant</li>
+                        <li>Free tacos for oppening</li>
+                        <li>Visit our new shop!</li>
+                    </ul>
+                    <br>
+                    <hr class="hr-spot-2">
+                    <p class="vis-ct">Visitors Count: <span class="Visits-cont"></span></p>
+                </div>
+                <br>
+                <hr class="hr-spot">
+                <div class="field">
+                    <h3>Entertainment</h3>
+                    <p>Stay tune:</p>
+                    <br>
+                    <ul>
+                        <li>Have you liesten the new song?</li>
+                        <li>New movies comig this mounth</li>
+                        <li>Here aree some recomendations to watch</li>
+                    </ul>
+                </div>
+                <br>
+                <hr class="hr-spot">
+                <div class="field">
+                    <h3>Location</h3>
+                    <div class="giframe">
+                        <iframe
+                            src=https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16117.89067025794!2d-117.01770650768081!3d32.52635340928044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1687632225856!5m2!1sen!2smx"
+                            class="giframe-3" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <br>
+                <hr class="hr-spot-pix">
+            </div>
+
+            <div class="sidebar sidebar-right">
+                <div class="field">
+
+                    <p><img src="images/cat6.webp" width="600px" height="400px" loading="lazy" alt="Image 2"></p>
+
+                </div><br>
+                <hr class="hr-spot-pix">
+                <div class="field">
+
+                    <p><img src="images/cat5.webp" width="600px" height="400px" loading="lazy" alt="Image 2"></p>
+                </div><br>
+                <hr class="hr-spot-pix">
+                <div class="field">
+
+                    <p><img src="images/cat4.webp" width="600px" height="400px" loading="lazy" alt="Image 2"></p>
+                </div><br>
+                <hr class="hr-spot-pix">
+                <div class="field">
+
+                    <p><img src="images/cat3.webp" width="600px" height="400px" loading="lazy" alt="Image 2"></p>
+                </div><br>
+                <hr class="hr-spot-pix">
+                <div class="field">
+
+                    <p><img src="images/cat2 .webp" width="600px" height="400px" loading="lazy" alt="Image 2"></p>
+                </div><br>
+                <hr class="hr-spot-pix">
+                <div class="field">
+
+                    <p><img src="images/cat1.webp" width="600px" height="400px" loading="lazy" alt="Image 2"></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> Hector Rodriguez, Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDate.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

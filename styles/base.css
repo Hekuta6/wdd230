@@ -12,6 +12,9 @@ header,
 main,
 footer,
 .menu {
+    margin: 1rem auto;
+    border: 1px solid var(--accent2-color);
+    padding: 1rem;
     max-width: 650px;
     margin: 0 auto;
 }
@@ -22,6 +25,17 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 0.5rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 img {
@@ -175,9 +189,26 @@ main {
 }
 
 iframe {
-    display: block;
-    width: 90%;
+    display: blaock;
+    width: 50%;
     height: 25rem;
     margin: 0 auto;
 
+}
+
+#hamburgerButton {
+    font-size: 2rem;
+    color: var(--accent2-color);
+    background: var(--accent1-color);
+    border-radius: 4px;
+    margin: 5px;
+
+}
+
+#mainMenu {
+    display: none;
+}
+
+#mainMenu.show {
+    display: block;
 }

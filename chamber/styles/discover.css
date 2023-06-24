@@ -1,0 +1,329 @@
+:root {
+    --primary-color: black;
+    --secondary-color: black;
+    --accent1-color: #072E74;
+    --accent2-color: white;
+
+    --heading-font: 'Libre Baskerville', serif;
+    --paragraph-font: 'Roboto', sans-serif;
+
+    --nav-background-color: #072E74;
+    --nav-link-color: #0a4ac1;
+    --nav-hover-link-color: black;
+    --nav-hover-background-color: #E6F2FF;
+}
+
+body {
+    font-family: var(--paragraph-font);
+
+}
+
+
+header,
+main {
+
+    margin: 1rem auto;
+    border: 1px solid var(--accent2-color);
+    padding: 1rem;
+    background-color: var(--accent2-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.card,
+.card2,
+.card3,
+.card4,
+.card5 {
+    box-shadow: 3px 3px 3px 1px var(--nav-background-color);
+    border-radius: 5px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: var(--nav-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 0px;
+    max-width: 100rem;
+}
+
+header img,
+nav img {
+    width: 60px;
+    height: 60px;
+}
+
+header,
+main {
+    max-width: 100rem;
+    margin: 0 auto;
+
+}
+
+main h3 {
+    color: var(--nav-link-color);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+.h1-name {
+    color: #fff;
+    font-size: larger;
+}
+
+
+#hamburgerButton {
+    font-size: 3rem;
+    color: var(--accent2-color);
+    background: var(--accent1-color);
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 14px;
+
+}
+
+#mainMenu {
+    display: none;
+}
+
+#mainMenu.show {
+    display: block;
+}
+
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 39.25%;
+
+
+}
+
+.header-content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    padding: 1rem;
+
+}
+
+.sname {
+    color: var(--accent2-color);
+    font-size: large;
+    font-weight: bolder;
+
+}
+
+.name img {
+    width: 60px;
+    height: 60px;
+}
+
+.cta-btn {
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    color: var(--accent2-color);
+    background: var(--nav-link-color);
+    border-radius: 2px 2px 2px 1px var(--accent1-color);
+    height: 60px;
+    width: 190px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    padding: 19px;
+    font-size: large;
+
+}
+
+.cta-btn:hover {
+    background: var(--nav-hover-link-color);
+    box-shadow: 2px 2px 2px 1px var(--accent2-color);
+    transition: .5s;
+}
+
+footer {
+    position: relative;
+    bottom: -15px;
+    max-width: 100rem;
+    height: 5rem;
+    padding: 1rem;
+    text-align: center;
+    background: var(--accent1-color);
+    border: 1px solid var(--accent2-color);
+    color: #fff;
+    font-size: 1.5rem;
+
+
+}
+
+h1,
+h2 {
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    margin: 0 auto;
+    max-width: 100rem;
+    transition: .6s;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid #fff;
+    transition: .5s;
+}
+
+nav img,
+nav h2 {
+    display: none;
+}
+
+
+section h3 {
+    text-align: center;
+
+
+
+}
+
+.spot {
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color: var(--nav-link-color);
+    box-shadow: 1px 2px 1px 1px var(--nav-hover-link-color);
+}
+
+
+
+hr {
+    font-size: small;
+    border: 1px dotted var(--nav-hover-link-color);
+}
+
+.hr-spot {
+    border: 1px dashed var(--nav-hover-link-color);
+}
+
+.hr-spot-2 {
+    border: 1px dashed var(--nav-hover-link-color);
+}
+
+.hr-spot-pix {
+    border: 1px dashed var(--nav-link-color);
+}
+
+.main-3 {
+    padding: 30px;
+    margin: 30px;
+}
+
+.grid-container {
+    grid-template-columns: 1fr;
+
+}
+
+.field {
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 1px 2px 2px 1px var(--nav-background-color);
+    border-radius: 4px;
+}
+
+.field img {
+    width: 100%;
+    height: 300px;
+}
+
+.field h3 {
+    margin-top: 0;
+}
+
+.field p {
+    color: var(--nav-hover-link-color);
+    font-weight: bolder;
+}
+
+.field ul {
+    list-style-type: none;
+}
+
+.giframe-3 {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+.Visits-cont,
+.vis-ct {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: larger;
+}
+
+.field img {
+
+    background: #000;
+    animation: fade 15s;
+    cursor: pointer;
+    border-radius: 3px;
+    object-fit: cover;
+
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

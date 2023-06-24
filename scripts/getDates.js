@@ -6,13 +6,11 @@ time = todaysDate.toLocaleTimeString('it-IT');
 document.querySelector('#year').textContent = year;
 document.querySelector('#lastModified').textContent = `Last Modification: ${dayName}/${monthName}/${year} ${time}`;
 
-const hamButton = document.querySelector('#displayMenu');
-const navigation = document.querySelector('.menu');
+const hamburgerButton = document.getElementById('hamburgerButton');
+const mainMenu = document.getElementById('mainMenu');
 
-
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
+hamburgerButton.addEventListener('click', () => {
+    mainMenu.classList.toggle('show');
 });
 
 function incrementPageVisits() {
