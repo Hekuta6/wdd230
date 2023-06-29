@@ -24,64 +24,62 @@
         <img class="profile picture" src="images/me.webp" alt="Me" loading="lazy">
         <h1>Hector Rodriguez</h1>
         <button id="hamburgerButton">&#8801;</button>
-        <div></div>
     </header>
-    <nav>
-        <nav id="mainMenu">
-            <li><a href="index.html" title="HOME">Home</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="">Site Plan</a></li>
-            <li><a href=""></a>Form</li>
+    <nav id="mainMenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <picture>
+            <source srcset="images/japan-temple-small.webp" loading="lazy" media="(max-width: 650px)">
+            <img src="images/japan-temple.webp" alt="Okinawa Japan Temple" loading="lazy" width="960" height="600">
+        </picture>
+        <div class="herolabel">
+            <p>Okinawa Japan Temple</p>
+        </div>
+    </div>
+    <main>
+        <h2>WDD 230: Web Fronted Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li>Week 1
+                    <a href="week01/holygrail.html">Holygrail</a> |
+                </li>
+                <li>Week 2
+                    <a href=""></a> |
+                    <a href="week02/design.html">Design</a> |
+                    <a href="https://codepen.io/rjbxgppf-the-animator/pen/BaGjbYB">Responsive "Hamburger" Menu</a> |
+                    <a href="week02/bom.html">DOM Manipulation</a> |
+                    <a href="chamber/index.html">The Chamber Home Page</a> |
+                </li>
+                <li>Week 3
+                    <a href="week03/images/landscape.webp">WebP</a> |
+                    <a href="week03/lazyload.html">Lazy Load</a> |
+                    <a href="week03//reponsive-images.html">Responsive Images</a> |
+                    <a href="chamber/discover.html">Photo Cats Chamber</a>
+                </li>
             </ul>
+        </section>
+        <h3>Information</h3>
+        <p>Number of visits: <span class="visits"></span></p>
         </nav>
-        <main>
-            <div class="templeLabel">Okinawa Japan Temple</div>
-            <div class="hero">
-                <picture>
-                    <source srcset="images/japan-temple-small.webp" loading="lazy" media="(max-width: 650px)">
-                    <img src="images/japan-temple.webp" alt="Okinawa Japan Temple" loading="lazy" width="960"
-                        height="600">
-                </picture>
-            </div>
-            <h2>WDD 230: Web Fronted Development</h2>
-            <section class="card" id="activities">
-                <h3>Learning Activities</h3>
-                <ul>
-                    <li>Week 1
-                        <a href="week01/holygrail.html">Holygrail</a> |
-                    </li>
-                    <li>Week 2
-                        <a href=""></a> |
-                        <a href="week02/design.html">Design</a> |
-                        <a href="https://codepen.io/rjbxgppf-the-animator/pen/BaGjbYB">Responsive "Hamburger" Menu</a> |
-                        <a href="week02/bom.html">DOM Manipulation</a> |
-                        <a href="chamber/index.html">The Chamber Home Page</a> |
-                    </li>
-                    <li>Week 3
-                        <a href="week03/images/landscape.webp">WebP</a> |
-                        <a href="week03/lazyload.html">Lazy Load</a> |
-                        <a href="week03//reponsive-images.html">Responsive Images</a> |
-                        <a href="chamber/discover.html">Photo Cats Chamber</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="card" id="information">
-                <h3>Information</h3>
-                <nav id="items">
-                    <nav>Place</nav>
-                    <li>Page Visits: <span id="pageVisits">0</span></li>
-                    <nav>Page Visits</nav>
-                </nav>
-            </section>
-        </main>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3367.946762931567!2d-117.08072349999999!3d32.4205841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1687486397495!5m2!1sen!2smx"
-            class="giframe-2" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <footer>
-            <p>&copy;<span id="year"></span> Hector Rodriguez | Mexico</p>
-            <p id="lastModified">Last Modification: </p>
-        </footer>
-        <script src="scripts/getDates.js"></script>
+        </section>
+    </main><br>
+    <div class="giframe"></div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3367.946762931567!2d-117.08072349999999!3d32.4205841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1687486397495!5m2!1sen!2smx"
+        class="giframe-2" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <p>&copy;<span id="year"></span> Hector Rodriguez | Mexico</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 
 </html>

@@ -25,6 +25,8 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 0.5rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -116,6 +118,20 @@ ul {
     padding: 1%;
 }
 
+nav {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 767px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-align: center;
+}
+
 .card h3 {
     text-align: center;
     padding: 1rem;
@@ -153,7 +169,9 @@ ul {
 }
 
 main {
-    padding-bottom: 3.3%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
 }
 
 #mode {
@@ -198,11 +216,13 @@ iframe {
 
 #hamburgerButton {
     font-size: 2rem;
-    color: var(--accent2-color);
-    background: var(--accent1-color);
+    color: white;
+    background: black;
     border-radius: 4px;
     margin: 5px;
-
+    cursor: pointer;
+    border: 0;
+    margin-top: 14px;
 }
 
 #mainMenu {
