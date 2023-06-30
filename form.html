@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 - Web Fronted Development Portal</title>
+    <meta name="description" content="Hector Rodriguez - WDD 230 - Web Fronted Development">
+    <meta name="author" content="Hector Rodriguez">
+    <meta name="title" content="Hector Rodriguez - WDD 230 - Web Fronted Development">
+    <meta property="og:title" content="Tijuana City">
+    <meta property="og:type" content="Pictues from the city">
+    <meta property="og:image"
+        content="https://www.istockphoto.com/es/foto/avenida-revoluci%C3%B3n-de-tijuana-con-el-arco-milenario-gm880471902-245278247">
+    <meta property="og:url" content="https://www.istockphoto.com/es/fotos/tijuana-city">
+    <link href="styles/form.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/moon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="profile picture" src="images/me.webp" alt="Me" loading="lazy">
+        <h1>Hector Rodriguez</h1>
+        <button id="darkModeButton">☑️</button>
+        <button id="hamburgerButton">&#8801;</button>
+    </header>
+    <nav id="mainMenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+
+
+        <h2 class="card3">Form | WDD 230: Web Frontend Development</h2>
+        <form method="get" action="record.html" name="form" id="form">
+            <div>
+                <label for="username" class="top">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password" class="top">Password:</label>
+                <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}"
+                    title="Password must be at least 8 characters long and can only be alphanumeric">
+            </div>
+            <div>
+                <label for="confirm_password" class="top">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required pattern="[A-Za-z0-9]{8,}">
+            </div>
+            <div>
+                <label for="email" class="top">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    title="Please enter a valid email address" placeholder="@byui.edu">
+            </div>
+            <div>
+                <label for="r" class="top">Page Rating:</label>
+
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </div>
+            <div>
+                <input type="submit" name="submit" id="submit">
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> Hector Rodriguez | Mexico</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
