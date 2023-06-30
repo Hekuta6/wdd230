@@ -1,32 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --accent1-color: white;
+    --accent2-color: #072E74;
+
+    --heading-font: 'Libre Baskerville', serif;
+    --paragraph-font: 'Roboto', sans-serif;
+
+    --nav-background-color: #0a4ac1;
+    --nav-link-color: white;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: white;
 }
 
 body {
-    font-family: 'Source Sans 3', serif;
+    font-family: var(--paragraph-font);
 }
 
+
 header,
-main,
-footer,
-.menu {
+footer {
+
     margin: 1rem auto;
     border: 1px solid var(--accent2-color);
     padding: 1rem;
-    max-width: 650px;
-    margin: 0 auto;
+    background-color: #0a4ac1;
+    color: white;
 }
 
-header {
-    display: flex;
-    background-color: #072E74;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0.5rem;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    margin: 1rem auto;
+    border: 1px solid var(--accent2-color);
+    padding: 1rem;
+    background-color: #0a4ac1;
 }
 
 section {
@@ -34,93 +44,97 @@ section {
     background-color: #fff;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img {
-    width: 15%;
-    margin: 1rem;
-    height: auto;
-    box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 7px rgba(0, 0, 0, 0.19);
+
+
+header {
+    background-color: var(--accent2-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+.giframe {
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+header,
+main {
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 300px;
+
+}
+
+.giframe-2 {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #072E74);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Great Vibes", serif;
+}
+
+
+footer {
+    max-width: 767px;
+    text-align: center;
+
 }
 
 h1 {
-    text-align: center;
-    padding: 1rem;
-    font-family: 'Libre Baskerville', serif;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-}
-
-.menu {
-    background-color: #460101;
-}
-
-
-h2 {
-    text-align: center;
-    padding: 1rem;
-    font-family: 'Libre Baskerville', serif;
-}
-
-
-.menu a {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0.5rem;
-    color: rgb(0, 0, 0);
-    font-family: 'Libre Baskerville', serif;
-    text-decoration: none;
-}
-
-
-.menu a:hover {
-    background-color: #000000;
-}
-
-.menu li {
-    display: none;
-}
-
-.card {
-    margin: 1rem auto;
-    border: 1px solid black;
-    border-radius: 2%;
-    width: 98%;
-    box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 7px rgba(0, 0, 0, 0.19);
-    overflow: hidden;
-}
-
-footer {
-    background-color: #072E74;
-    padding: 1.2rem;
-    display: block;
-    text-align: center;
-    color: white;
-    font-family: 'Libre Baskerville', serif;
-    margin-bottom: 0.5rem;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.card ul {
-    padding: 2rem;
-}
-
-.card nav {
-    text-align: center;
-    padding: 1%;
+    font-size: 2rem;
 }
 
 nav {
-    background-color: white;
+    background-color: var(--nav-background-color);
     margin: 0 auto;
+
     max-width: 767px;
 }
 
@@ -129,100 +143,40 @@ nav ul {
 }
 
 nav a {
-    text-align: center;
-}
-
-.card h3 {
+    display: block;
+    color: #fff;
     text-align: center;
     padding: 1rem;
-    background-color: #0a4ac1;
-    color: white;
+    text-decoration: none;
 }
 
-.card li {
-    padding: 0.5%;
+nav a:hover {
+    border: 1px solid #fff;
 }
 
-#lastModified {
-    font-size: 1rem;
-    padding-top: 1rem;
+section h3 {
+    text-align: center;
+
+
+
 }
 
-#displaymenu {
-    position: absolute;
-    top: 2.5rem;
-    left: 1rem;
-    padding: 0.25rem;
-}
-
-#displaymenu::before {
-    content: "☰";
-}
-
-.open li {
-    display: block;
-    width: 100%;
-}
-
-.open li a {
-    display: block;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-}
-
-#mode {
+#darkModeButton {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background-color: rgb(163, 154, 154);
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-#displaymenu.open::before {
-    content: "✖";
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.templeLabel {
-    position: absolute;
-    top: 8rem;
-    left: 1rem;
-    text-align: center;
-    font-size: 1.2rem;
-    background-color: rgba(88, 112, 168, 0.5);
-    border: 1px solid rgb(88, 87, 87, 0.8);
-    box-shadow: 10px 15px 48px 0px rgba(4, 46, 140, 0.75);
-    -webkit-box-shadow: 10px 15px 48px 0px rgba(4, 46, 140, 0.75);
-    -moz-box-shadow: 10px 15px 48px 0px rgba(4, 46, 140, 0.75);
-    font-family: 'Pacifico', cursive;
-
-}
-
-iframe {
-    display: blaock;
-    width: 50%;
-    height: 25rem;
-    margin: 0 auto;
-
-}
 
 #hamburgerButton {
     font-size: 2rem;
-    color: white;
-    background: black;
+    color: var(--accent2-color);
+    background: var(--accent1-color);
     border-radius: 4px;
     margin: 5px;
-    cursor: pointer;
-    border: 0;
-    margin-top: 14px;
+
 }
 
 #mainMenu {
@@ -231,4 +185,40 @@ iframe {
 
 #mainMenu.show {
     display: block;
+}
+
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode h1 {
+    color: #fff;
+}
+
+.dark-mode a {
+    color: #fff;
+}
+
+
+.dark-mode nav {
+    background-color: #333;
+}
+
+.dark-mode nav a {
+    color: #fff;
+}
+
+.dark-mode nav a:hover {
+    border: 1px solid #fff;
+}
+
+.dark-mode section {
+    background-color: #444;
+}
+
+.dark-mode footer {
+    background-color: #333;
+    color: #fff;
 }

@@ -13,26 +13,3 @@ hamburgerButton.addEventListener('click', () => {
     mainMenu.classList.toggle('show');
 });
 
-function incrementPageVisits() {
-    let pageVisits = localStorage.getItem('pageVisits');
-    if (pageVisits) {
-        pageVisits = parseInt(pageVisits) + 1;
-    } else {
-        pageVisits = 1;
-    }
-    localStorage.setItem('pageVisits', pageVisits.toString());
-}
-
-function getPageVisits() {
-    let pageVisits = localStorage.getItem('pageVisits');
-    return pageVisits ? parseInt(pageVisits) : 0;
-}
-
-incrementPageVisits();
-
-let pageVisitsCount = getPageVisits();
-document.querySelector('#sectionTwo ul li:nth-child(3)').textContent = 'Page Visits: ' + pageVisitsCount;
-
-
-copyNameState();
-updateDateTime();

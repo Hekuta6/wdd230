@@ -23,6 +23,7 @@
     <header>
         <img class="profile picture" src="images/me.webp" alt="Me" loading="lazy">
         <h1>Hector Rodriguez</h1>
+        <button id="darkModeButton">☑️</button>
         <button id="hamburgerButton">&#8801;</button>
     </header>
     <nav id="mainMenu">
@@ -35,8 +36,8 @@
     </nav>
     <div class="hero">
         <picture>
-            <source srcset="images/japan-temple-small.webp" loading="lazy" media="(max-width: 650px)">
-            <img src="images/japan-temple.webp" alt="Okinawa Japan Temple" loading="lazy" width="960" height="600">
+            <source srcset="images/japan-temple-larger.webp" loading="lazy">
+            <img src="images/japan-temple.webp" alt="Okinawa Japan Temple" loading="lazy">
         </picture>
         <div class="herolabel">
             <p>Okinawa Japan Temple</p>
@@ -65,9 +66,10 @@
                 </li>
             </ul>
         </section>
-        <h3>Information</h3>
-        <p>Number of visits: <span class="visits"></span></p>
-        </nav>
+        <section class="card2">
+            <h3>Information</h3>
+            <p>Number of visits: <span class="visits"></span></p>
+            </nav>
         </section>
     </main><br>
     <div class="giframe"></div>
@@ -80,6 +82,7 @@
         <p id="lastModified">Last Modification: </p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
