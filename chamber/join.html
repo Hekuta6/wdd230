@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 - Web Fronted Development Portal</title>
+    <meta name="description" content="Hector Rodriguez - WDD 230 - Web Fronted Development">
+    <meta name="author" content="Hector Rodriguez">
+    <meta name="title" content="Hector Rodriguez - WDD 230 - Web Fronted Development">
+    <meta property="og:title" content="Tijuana City">
+    <meta property="og:type" content="Pictues from the city">
+    <meta property="og:image"
+        content="https://www.istockphoto.com/es/foto/avenida-revoluci%C3%B3n-de-tijuana-con-el-arco-milenario-gm880471902-245278247">
+    <meta property="og:url" content="https://www.istockphoto.com/es/fotos/tijuana-city">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="profile picture" src="images/me.webp" alt="Me" loading="lazy">
+        <h1>Hector Rodriguez</h1>
+        <button id="darkModeButton">☑️</button>
+        <button id="hamburgerButton">&#8801;</button>
+    </header>
+    <nav id="mainMenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="directory">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend> Please give your information</legend>
+                    <div><label class="top">First Name* </label>
+                        <input type="text" name="fname" required>
+                    </div>
+                    <div><label class="top">Last Name* </label>
+                        <input type="text" name="lname" required>
+                    </div>
+                    <div><label class="top">Email* </label>
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div><label class="top">Phone* </label>
+                        <input type="tel" name="phone" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend> Business information</legend>
+
+                    <div> <label class="top">Business Name* </label>
+                        <input type="text" name="businessname" required>
+                    </div>
+
+                    <div> <label class="top">Business Position Title </label>
+                        <input name="business" type="text" id="business"
+                            title="Please enter a valid business position title (minimum 7 characters with only letters, hyphens, and spaces).">
+                    </div>
+
+                    <div><label class="top">Business Name* </label>
+                        <input type="text" name="businessname" required>
+                    </div>
+                    <div><label class="top">Membership</label>
+                        <select name="subject">
+                            <option value="One">Select your membership level</option>
+                            <option value="NP "> NP Membership</option>
+                            <option value="Bronze"> Bronze Membership</option>
+                            <option value="Silver"> Silver Membership</option>
+                            <option value="Gold"> Gold Membership</option>
+                        </select>
+                    </div>
+
+                    <div><label class="top"> Business description:</label>
+                        <textarea id="feedback" name="feedback "></textarea>
+                    </div>
+
+                </fieldset>
+                <input type="submit" value="Join Us" class="submitBtn">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> Hector Rodriguez | Mexico</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

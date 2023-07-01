@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 - Web Fronted Development Portal</title>
+    <meta name="description" content="Hector Rodriguez - WDD 230 - Web Fronted Development">
+    <meta name="author" content="Hector Rodriguez">
+    <meta name="title" content="Hector Rodriguez - WDD 230 - Web Fronted Development">
+    <meta property="og:title" content="Tijuana City">
+    <meta property="og:type" content="Pictues from the city">
+    <meta property="og:image"
+        content="https://www.istockphoto.com/es/foto/avenida-revoluci%C3%B3n-de-tijuana-con-el-arco-milenario-gm880471902-245278247">
+    <meta property="og:url" content="https://www.istockphoto.com/es/fotos/tijuana-city">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="profile picture" src="images/me.webp" alt="Me" loading="lazy">
+        <h1>Hector Rodriguez</h1>
+        <button id="darkModeButton">☑️</button>
+        <button id="hamburgerButton">&#8801;</button>
+    </header>
+    <nav id="mainMenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main class="chamber">
+        <div class="home-hero">
+
+            <h1> Thank you for join us</h1>
+            <p>We appreciate your subscription and we hope we can spend good time togheter!</p>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Hector Rodriguez | Mexico</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

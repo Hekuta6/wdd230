@@ -1,32 +1,31 @@
-// Hamburger Menu
-const hamburgerButton = document.getElementById('hamburgerButton');
-const mainMenu = document.getElementById('mainMenu');
 
-hamburgerButton.addEventListener('click', () => {
-    mainMenu.classList.toggle('show');
+const darkModeButton = document.getElementById('darkModeButton');
+const main = document.querySelector('main');
+
+darkModeButton.addEventListener('click', () => {
+    if (darkModeButton.textContent.includes("☑️")) {
+        main.classList.toggle('dark-mode');
+        darkModeButton.textContent = "❎";
+    } else {
+        main.classList.toggle('dark-mode');
+        darkModeButton.textContent = "☑️";
+    }
+
 });
 
+const visitsDisplay = document.querySelector(".visits");
 
-const sidebarContent = document.querySelector('.Visits-cont');
-const lastVisit = localStorage.getItem('lastVisit');
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
-if (!lastVisit) {
-    sidebarContent.textContent = "Welcome! Let us know if you have any questions.";
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
 } else {
-    const lastVisitDate = new Date(parseInt(lastVisit));
-    const currentDate = new Date();
-    const timeDiff = Math.floor((currentDate - lastVisitDate) / (1000 * 60 * 60 * 24));
-
-    if (timeDiff === 0) {
-        sidebarContent.textContent = "Back so soon! Awesome!";
-    } else {
-        const timeMessage = `You last visited ${timeDiff} ${timeDiff === 1 ? 'day' : 'days'} ago.`;
-        sidebarContent.textContent = timeMessage;
-    }
+    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
 }
 
-localStorage.setItem('lastVisit', Date.now().toString());
+numVisits++;
 
+localStorage.setItem("numVisits-ls", numVisits);
 
 
 
