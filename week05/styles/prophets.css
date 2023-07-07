@@ -1,0 +1,52 @@
+h1 {
+    color: #D4DCE4;
+    background-color: #072E74;
+    text-align: center;
+    padding: 1rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+section {
+    background-color: #D4DCE4;
+    border: 1px solid #002D54;
+    margin: .5rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 340px;
+    width: auto;
+    box-shadow: 0 0 30px #002D54;
+    border: 1px solid #002D54;
+}
+
+section,
+img,
+h2 {
+    transition: transform 0.3s ease;
+}
+
+section:hover section,
+section:hover img,
+section:hover h2 {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #36556D;
+}
+
+footer {
+    width: 100%;
+    color: #D4DCE4;
+    background-color: #072E74;
+    text-align: center;
+    padding: 1rem;
+}

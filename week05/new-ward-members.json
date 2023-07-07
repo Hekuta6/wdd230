@@ -1,0 +1,28 @@
+{
+    "familyName": "Rodriguez",
+    "dateMoved": "01/18/2005",
+    "familyMembers": "4",
+    "visitedBis": true,
+    "memberName": [
+        {
+            "name": "Daniel Rodriguez",
+            "gender": "male",
+            "birthDate": "08/01/1975"
+        },
+        {
+            "name": "Rosalba Mendoza",
+            "gender": "female",
+            "birthDate": "05/02/1976"
+        },
+        {
+            "name": "Hector Rodriguez",
+            "gender": "male",
+            "birthDate": "11/03/1995"
+        },
+        {
+            "name": "Leonardo Rodriguez",
+            "gender": "male",
+            "birthDate": "01/25/2000"
+        }
+    ]
+}

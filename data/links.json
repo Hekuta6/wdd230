@@ -1,0 +1,101 @@
+{
+    "weeks": [
+        {
+            "week": "Week 01",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holygrail"
+                }
+            ]
+        },
+        {
+            "week": "Week 02",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "https://codepen.io/rjbxgppf-the-animator/pen/BaGjbYB",
+                    "title": "Responsive 'Hamburger' Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "DOM Manipulation"
+                },
+                {
+                    "url": "chamber/discover.html",
+                    "title": "Photo Cats Chamber"
+                }
+            ]
+        },
+        {
+            "week": "Week 03",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "week03//reponsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "chamber/discover.html",
+                    "title": "Photo Cats Chamber"
+                }
+            ]
+        },
+        {
+            "week": "Week 04",
+            "links": [
+                {
+                    "url": "https://codepen.io/rjbxgppf-the-animator/pen/XWyRdGV",
+                    "title": "CSS Pseudo-Classes"
+                },
+                {
+                    "url": "images/CSS Combinators.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables for Data Presentation"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build"
+                },
+                {
+                    "url": "chamber/join.html",
+                    "title": "The Chamber Join Page"
+                }
+            ]
+        },
+        {
+            "week": "Week 05",
+            "links": [
+                {
+                    "url": "https://codepen.io/rjbxgppf-the-animator/pen/LYXzZvg",
+                    "title": "CSS Pseudo-elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "The Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "WeatConsuming a Weather API"
+                }
+            ]
+        }
+    ]
+}
