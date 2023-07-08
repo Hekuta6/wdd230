@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Bimbo",
+            "address": "Blvd. Gustavo Díaz Ordaz 173",
+            "phonenumber": "(663) 127 0648",
+            "websiteurl": "www.grupobimbo.com",
+            "image": "https://hekuta6.github.io/wdd230/chamber/images/bimbo.webp",
+            "membership": "Platinum",
+            "kind": "Bread"
+        },
+        {
+            "name": "Gamesa",
+            "address": "Norte 103",
+            "phonenumber": "(664) 623 3310",
+            "websiteurl": "https://www.gamesacookies.com/es",
+            "image": "https://hekuta6.github.io/wdd230/chamber/images/gamesa.webp",
+            "membership": "Silver",
+            "kind": "Cookies"
+        },
+        {
+            "name": "Sabritas",
+            "address": "Blvrd Federico Benítez López 17310-D",
+            "phonenumber": "(664) 660 7316",
+            "websiteurl": "https://sabritas.com.mx",
+            "image": "https://hekuta6.github.io/wdd230/chamber/images/sabritas.webp",
+            "membership": "Silver",
+            "kind": "Fries"
+        },
+        {
+            "name": "Ricolino",
+            "address": "v. Eje Central Lázaro Cárdenas No. 711 Nueva Industrial Vallejo",
+            "phonenumber": "(664) 856 7894",
+            "websiteurl": "https://barcel-usa.com/ricolino",
+            "image": "https://hekuta6.github.io/wdd230/chamber/images/ricolino.webp",
+            "membership": "Gold",
+            "kind": "Candy"
+        },
+        {
+            "name": "Coca-Cola",
+            "address": "Calz del Tecnológico 15905",
+            "phonenumber": "(664) 627 6700",
+            "websiteurl": "https://www.coca-cola.com.mx/",
+            "image": "https://hekuta6.github.io/wdd230/chamber/images/coca.webp",
+            "membership": "Platinum",
+            "kind": "Soda"
+        },
+        {
+            "name": "Pepsi",
+            "address": "Parque Industrial Pacifico II",
+            "phonenumber": "(664) 111 2112",
+            "websiteurl": "https://www.pepsico.com.mx",
+            "image": "https://hekuta6.github.io/wdd230/chamber/images/pepsi.webp",
+            "membership": "bronce",
+            "kind": "Soda"
+        },
+        {
+            "name": "Penafiel",
+            "address": "Boulevard Federico Benítez 15102",
+            "phonenumber": "(664) 969 1700",
+            "websiteurl": "https://grupopenafiel.com.mx/",
+            "image": "https://hekuta6.github.io/wdd230/chamber/images/penafiel.webp",
+            "membership": "Bronze",
+            "businesstype": "Wand Shop"
+        }
+    ]
+}
