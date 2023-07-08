@@ -6,7 +6,7 @@
             "phonenumber": "(663) 127 0648",
             "website": "www.grupobimbo.com",
             "image": "https://hekuta6.github.io/wdd230/chamber/images/bimbo.webp",
-            "membershipLevel": "Platinum",
+            "membershipLevel": "Platinum"
         },
         {
             "name": "Gamesa",
@@ -14,7 +14,7 @@
             "phonenumber": "(664) 623 3310",
             "website": "https://www.gamesacookies.com/es",
             "image": "https://hekuta6.github.io/wdd230/chamber/images/gamesa.webp",
-            "membershipLevel": "Silver",
+            "membershipLevel": "Silver"
         },
         {
             "name": "Sabritas",
@@ -22,7 +22,7 @@
             "phonenumber": "(664) 660 7316",
             "website": "https://sabritas.com.mx",
             "image": "https://hekuta6.github.io/wdd230/chamber/images/sabritas.webp",
-            "membershipLevel": "Silver",
+            "membershipLevel": "Silver"
         },
         {
             "name": "Ricolino",
@@ -30,7 +30,7 @@
             "phonenumber": "(664) 856 7894",
             "website": "https://barcel-usa.com/ricolino",
             "image": "https://hekuta6.github.io/wdd230/chamber/images/ricolino.webp",
-            "membershipLevel": "Gold",
+            "membershipLevel": "Gold"
         },
         {
             "name": "Coca-Cola",
@@ -38,7 +38,7 @@
             "phonenumber": "(664) 627 6700",
             "website": "https://www.coca-cola.com.mx/",
             "image": "https://hekuta6.github.io/wdd230/chamber/images/coca.webp",
-            "membershipLevel": "Platinum",
+            "membershipLevel": "Platinum"
         },
         {
             "name": "Pepsi",
@@ -46,7 +46,7 @@
             "phonenumber": "(664) 111 2112",
             "website": "https://www.pepsico.com.mx",
             "image": "https://hekuta6.github.io/wdd230/chamber/images/pepsi.webp",
-            "membershipLevel": "bronce",
+            "membershipLevel": "bronce"
         },
         {
             "name": "Penafiel",
@@ -54,7 +54,7 @@
             "phonenumber": "(664) 969 1700",
             "website": "https://grupopenafiel.com.mx/",
             "image": "https://hekuta6.github.io/wdd230/chamber/images/penafie.webp",
-            "membershipLevel": "Bronze",
+            "membershipLevel": "Bronze"
         }
     ]
 }
