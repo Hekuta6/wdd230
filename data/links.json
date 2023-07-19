@@ -6,6 +6,14 @@
                 {
                     "url": "week01/holygrail.html",
                     "title": "Holygrail"
+                },
+                {
+                    "irl": "https://codepen.io/rjbxgppf-the-animator/pen/KKrppQz",
+                    "title": "Applied JavaScript"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "CSS Media Queries"
                 }
             ]
         },
